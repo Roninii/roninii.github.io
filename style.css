@@ -1,0 +1,199 @@
+/* global stylings */
+html {
+  background:
+  linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+  linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+  linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+  linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+  linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+  linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+  background-color: #131313;
+  background-size: 20px 20px;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+.icon {
+  width: 75px;
+  height: 75px;
+  box-shadow: 0px 5px 10px black;
+  border-radius: 100%;
+  display: block;
+  margin: 5px;
+}
+.thumbnail {
+  width: auto;
+  height: 200px;
+}
+main {
+  text-align: center;
+}
+
+/* wrapper */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+.icon-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+
+/* nav bar */
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #131313;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 100%;
+  box-shadow: 0px 2px 10px #0da4ba;
+}
+.nav-icon {
+  width: 60px;
+  height: auto;
+  padding: 0px 15px;
+}
+.nav > li {
+  float: right;
+}
+.nav > li > a {
+  display: block;
+  width: 75px;
+  text-align: center;
+  padding: 23px 25px;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #0da4ba;
+  
+}
+.nav > li > a:hover {
+  text-decoration: underline;
+  text-decoration-color: #0da4ba;
+}
+
+
+/* about section */
+.headshot {
+  float: left;
+  width: 325px;
+  height: auto;
+  margin-top: 20vh;
+  margin-right: 30px;
+  box-shadow: 0px 5px 10px black;
+}
+.about {
+  background-size: 20px 20px;
+  height: 100vh;
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.about h1{
+ margin-top: 5vh;
+ padding-top: 20vh;
+}
+
+/* projects sections */
+.projects {
+ margin-top: 30vh;
+ padding-top: 20vh;
+ height: 100vh;
+ overflow: auto;
+}
+.project-tile {
+  margin: 5px;
+}
+.project-list {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+/* contact section */
+.contact {
+  padding-top: 10vh;
+  height: 100vh;
+}
+
+
+/* tedious icon background settings */
+.github {
+  background-color: #9cdaf0;
+}
+.html {
+  background-color: #f0652a;
+}
+.css {
+  background-color: #33a9dc;
+}
+.javascript {
+    background-color: #f0db4f;
+}
+.react {
+  background-color: #292929;
+}
+.node {
+  background-color: #46483e;
+}
+.linux {
+  background-color: #f3bf00;
+}
+.inbox {
+  background-color: #1b97f3;
+}
+
+/* media queries  */
+@media only screen and (max-width: 500px) {
+  .nav li {
+    float: none;
+    border-bottom: 2px solid  #0da4ba;
+  }
+  .nav-icon {
+    display: none;
+  }
+  .contact {
+    margin-top: 35vh;
+  }
+  .headshot {
+    margin-top: 35vh;
+    margin-right: 0;
+    float: none;
+  }
+  .about {
+    width: 100%;
+  }
+  .about h1 {
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 0;
+  }
+  .projects {
+    margin-top: 45vh;
+    padding-top: 35vh;
+  }
+  .contact {
+    padding-top: 30vh;
+  }
+}
+@media only screen and (max-height: 430px) {
+  .projects {
+    margin-top: 50vh;
+  }
+  .contact {
+    margin-top: 30vh;
+    padding-top: 30vh;
+  }
+}
